@@ -1,0 +1,75 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between left and right groups */
+  width: 100%;
+  max-width: 800px;               /* Optional: keep it neat */
+  margin: 20px auto 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 8px 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Left button (Add Person) */
+.search-bar .left-actions button {
+  background: #007bff;           /* Blue button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+.search-bar .left-actions button:hover {
+  background: #0056b3;
+}
+
+/* Right side (Search + Filter) */
+.search-bar .right-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  margin-left: 16px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 50px;
+  background: #f9f9f9;
+}
+
+.search-bar .right-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.search-bar .right-actions button:hover {
+  background: #f2f2f2;
+  color: #000;
+}
+
+.filter-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between icon and dropdown */
+}
+
+.filter-icon {
+  font-size: 18px;
+  color: #555;
+}

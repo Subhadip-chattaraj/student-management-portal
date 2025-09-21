@@ -1,0 +1,195 @@
+.add-student-container {
+  max-width: 500px;
+  margin: 5px auto;
+  background: transparent;        /* transparent background */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+/* Header with logo + title */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;               /* allow wrapping on small screens */
+}
+
+.header .logo {
+  font-size: 28px;
+  color: #007bff;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form styles */
+.student-form .form-group {
+  margin-bottom: 15px;
+}
+
+.student-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+}
+
+.student-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.back-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #ddd;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
+  .add-student-container {
+    margin: 20px;
+    padding: 15px;
+    box-shadow: none;            /* remove shadow for cleaner look */
+  }
+
+  .header h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .student-form input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .submit-btn,
+  .back-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Action buttons row */
+.form-actions {
+  display: flex;
+  justify-content: space-between; /* space between save & back */
+  gap: 12px;                      /* spacing between buttons */
+  margin-top: 20px;
+}
+
+.submit-btn,
+.back-btn {
+  flex: 1;                        /* both take equal width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;                       /* spacing between icon & text */
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Save button styling */
+.submit-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+/* Back button styling */
+.back-btn {
+  background: #f2f2f2;
+  color: #333;
+  border: none;
+}
+
+.back-btn:hover {
+  background: #ddd;
+}
+
+/* Popup styling */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 250px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  animation: slideIn 0.4s ease, fadeOut 0.5s ease 1.5s forwards;
+  z-index: 9999;
+}
+
+.popup.success {
+  background: #28a745; /* green */
+}
+
+.popup.error {
+  background: #dc3545; /* red */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
