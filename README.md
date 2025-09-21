@@ -1,10 +1,10 @@
-Student Management System
+>  Student Management System
 
   A Student Management System built using React (frontend), Spring Boot (backend), Lombok, JPA, and MySQL. This system allows efficient management of student records with a user-friendly interface for adding, updating, deleting, and viewing student information.
 
-Features
+> Features
 
-Add New Students
+>  Add New Students
 Add student records with details including:
 
 Name
@@ -19,45 +19,45 @@ Address
 
 Phone Number
 
-Update Student Details
+>  Update Student Details
 Modify existing student information easily.
 
-Delete Students
+>  Delete Students
 Remove student records from the system.
 
-Search Functionality
+>  Search Functionality
 Search students by name or roll number.
 
-Filter by Class
+>  Filter by Class
 Quickly filter students by class.
 
-Responsive UI
+>  Responsive UI
 A clean and responsive React interface for seamless user experience.
 
-Technologies Used
+>   Technologies Used
 
-Frontend: React, CSS, React Icons, React Toastify
+** Frontend: React, CSS, React Icons, React Toastify
 
-Backend: Spring Boot, Spring Data JPA, Lombok
+** Backend: Spring Boot, Spring Data JPA, Lombok
 
-Database: MySQL
+** Database: MySQL
 
-Build Tools: Maven (Backend), npm (Frontend)
+** Build Tools: Maven (Backend), npm (Frontend)
 
-Database
+> Database
 
-Database Name: student-management-system
+> Database Name: student-management-system
 
-Table: student
+> Table: student
 
-Column Name	Data Type	Description
-id	INT	Primary Key, Auto-increment
-name	VARCHAR	Student Name
-age	INT	Student Age
-study_class	INT	Student Class
-roll_no	INT	Student Roll Number
-address	VARCHAR	Student Address
-phone_no	VARCHAR	Student Phone Number
+  Column Name	    Data Type	      Description
+    id	      INT	Primary Key     Auto-increment
+    name	        VARCHAR	        Student Name
+    age            	INT	          Student Age
+  study_class	      INT	          Student Class
+  roll_no	          INT	          Student Roll Number
+  address	        VARCHAR	        Student Address
+  phone_no	      VARCHAR	        Student Phone Number
 
 
 <img width="1918" height="870" alt="image" src="https://github.com/user-attachments/assets/95fa0d2a-04c2-430f-82d6-633d7bb7e1ce" />
@@ -68,6 +68,3 @@ phone_no	VARCHAR	Student Phone Number
 
 
 
-Screenshots
-
-(Optional: Add screenshots of the UI to make it visually appealing)
